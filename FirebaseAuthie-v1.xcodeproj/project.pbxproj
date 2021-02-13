@@ -16,6 +16,9 @@
 		B1D9162D25D8592F004E5AB0 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D9162C25D8592F004E5AB0 /* SignUpViewController.swift */; };
 		B1D9163125D85950004E5AB0 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D9163025D85950004E5AB0 /* SignInViewController.swift */; };
 		B1D9163425D85970004E5AB0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D9163325D85970004E5AB0 /* HomeViewController.swift */; };
+		B1D9163825D86073004E5AB0 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D9163725D86073004E5AB0 /* Utilities.swift */; };
+		B1D9163D25D86261004E5AB0 /* GradientButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D9163C25D86261004E5AB0 /* GradientButtonView.swift */; };
+		B1D9164125D86340004E5AB0 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D9164025D86340004E5AB0 /* GradientView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		B1D9162C25D8592F004E5AB0 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		B1D9163025D85950004E5AB0 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		B1D9163325D85970004E5AB0 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		B1D9163725D86073004E5AB0 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		B1D9163C25D86261004E5AB0 /* GradientButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientButtonView.swift; sourceTree = "<group>"; };
+		B1D9164025D86340004E5AB0 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +68,7 @@
 		B1D9161525D8590C004E5AB0 /* FirebaseAuthie-v1 */ = {
 			isa = PBXGroup;
 			children = (
+				B1D9163A25D86079004E5AB0 /* Helpers */,
 				B1D9162B25D8591D004E5AB0 /* Controllers */,
 				B1D9161625D8590C004E5AB0 /* AppDelegate.swift */,
 				B1D9161825D8590C004E5AB0 /* SceneDelegate.swift */,
@@ -82,6 +89,16 @@
 				B1D9163325D85970004E5AB0 /* HomeViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B1D9163A25D86079004E5AB0 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				B1D9163725D86073004E5AB0 /* Utilities.swift */,
+				B1D9163C25D86261004E5AB0 /* GradientButtonView.swift */,
+				B1D9164025D86340004E5AB0 /* GradientView.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,10 +173,13 @@
 			files = (
 				B1D9161B25D8590C004E5AB0 /* StartViewController.swift in Sources */,
 				B1D9161725D8590C004E5AB0 /* AppDelegate.swift in Sources */,
+				B1D9163825D86073004E5AB0 /* Utilities.swift in Sources */,
 				B1D9162D25D8592F004E5AB0 /* SignUpViewController.swift in Sources */,
 				B1D9163125D85950004E5AB0 /* SignInViewController.swift in Sources */,
 				B1D9161925D8590C004E5AB0 /* SceneDelegate.swift in Sources */,
+				B1D9163D25D86261004E5AB0 /* GradientButtonView.swift in Sources */,
 				B1D9163425D85970004E5AB0 /* HomeViewController.swift in Sources */,
+				B1D9164125D86340004E5AB0 /* GradientView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
