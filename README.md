@@ -1,1 +1,1 @@
-# FirebaseAuthie-v1
+Sign In & Up authentification using Google Firebase services
