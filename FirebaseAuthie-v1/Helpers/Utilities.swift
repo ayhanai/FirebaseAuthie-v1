@@ -33,9 +33,9 @@ class Utilities {
         button.layer.cornerRadius = 15.0
     }
     
-//    static func isPasswordValid(_ password : String) -> Bool {
-//
-//        let passwordTest = NSPredicate(format: "SELF MATCHES %@", "^(?=.*[a-z])(?=.*[$@$#!%*?&])[A-Za-z\\d$@$#!%*?&]{8,}")
-//        return passwordTest.evaluate(with: password)
-//    }
+    static func isPasswordSecured(_ password : String) -> Bool {
+
+        let passwordTest = NSPredicate(format: "SELF MATCHES %@", "^(?=.*[a-z])(?=.*[$@$#!%*?&])[A-Za-z\\d$@$#!%*?&]{8,}")
+        return passwordTest.evaluate(with: password)
+    }
 }
