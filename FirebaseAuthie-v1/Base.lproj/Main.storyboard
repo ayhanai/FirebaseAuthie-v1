@@ -341,23 +341,14 @@
         <designable name="7VV-3K-7e3">
             <size key="intrinsicContentSize" width="76" height="44"/>
         </designable>
-        <designable name="8bC-Xf-vdC">
-            <size key="intrinsicContentSize" width="30" height="34"/>
-        </designable>
         <designable name="EVF-RM-FnA">
             <size key="intrinsicContentSize" width="88" height="44"/>
         </designable>
         <designable name="Haq-73-Xny">
             <size key="intrinsicContentSize" width="76" height="44"/>
         </designable>
-        <designable name="gfY-im-dVV">
-            <size key="intrinsicContentSize" width="30" height="34"/>
-        </designable>
         <designable name="nki-ZB-VHW">
             <size key="intrinsicContentSize" width="88" height="44"/>
-        </designable>
-        <designable name="rcI-y4-Esa">
-            <size key="intrinsicContentSize" width="30" height="34"/>
         </designable>
     </designables>
     <resources>
