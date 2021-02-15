@@ -9,6 +9,8 @@ target 'FirebaseAuthie-v1' do
  
   pod 'Firebase/Analytics'
   pod 'Firebase/Auth'
+  pod 'Firebase/Core'
+  pod 'Firebase/Firestore'
 
 
 end

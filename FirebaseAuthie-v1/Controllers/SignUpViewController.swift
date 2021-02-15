@@ -7,6 +7,7 @@
 
 import UIKit
 import FirebaseAuth
+import Firebase
 
 class SignUpViewController: UIViewController {
 
@@ -53,28 +54,46 @@ class SignUpViewController: UIViewController {
     @IBAction func backTapped(_ sender: UIButton) {
         navigationController?.popViewController(animated: true)
     }
-//    @IBAction func signUpTapped(_ sender: UIButton) {
-//        //Validate the fields
-//        let error = validateFields()
-//
-//        if error != nil {
-//            //There's something wrong with the fields
-//           showError(error!)
-//        } else {
-//            //Create user
-//            Auth.auth().createUser(withEmail: <#T##String#>, password: <#T##String#>) { (result, error) in
-//                //Check errors
-//                if error != nil {
-//                    //There was an error creating user
-//                    self.showError("Error creating user")
-//                } else {
-//                    //User was created successfully
-//                }
-//
-//            //Transition to Home view
-//            }
-//        }
-//    }
+    
+    @IBAction func signUpTapped(_ sender: UIButton) {
+        //Validate the fields
+        let error = validateFields()
+
+        if error != nil {
+            //There's something wrong with the fields
+           showError(error!)
+        } else {
+            //Create cleaned version of the data
+            let firstname = firstNameTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+            let lastname = lastNameTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+            let email = emailTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+            let password = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+            //Create user
+            Auth.auth().createUser(withEmail: email, password: password) { (result, error) in
+                //Check errors
+                if error != nil {
+                    //There was an error creating user
+                    self.showError("Error creating user")
+                } else {
+                    //User was created successfully
+                    let db = Firestore.firestore()
+                    db.collection("users").addDocument(data: ["firstname": firstname, "lastname": lastname, "uid": result!.user.uid]) { (error) in
+                        if error != nil {
+                            self.showError("User's data couldn't be synced whith our database")
+                        }
+                    }
+                    
+                    self.transitionToHome()
+                }
+
+            
+            }
+        }
+    }
+    
+    func transitionToHome() {
+        
+    }
     
     
     func setUpElements() {
