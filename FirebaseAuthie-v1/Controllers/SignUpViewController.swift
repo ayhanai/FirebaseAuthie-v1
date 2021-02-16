@@ -63,11 +63,13 @@ class SignUpViewController: UIViewController {
             //There's something wrong with the fields
            showError(error!)
         } else {
+            
             //Create cleaned version of the data
             let firstname = firstNameTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
             let lastname = lastNameTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
             let email = emailTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
             let password = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+            
             //Create user
             Auth.auth().createUser(withEmail: email, password: password) { (result, error) in
                 //Check errors
@@ -92,7 +94,9 @@ class SignUpViewController: UIViewController {
     }
     
     func transitionToHome() {
-        
+        let homeViewController = storyboard?.instantiateViewController(withIdentifier: Constants.Storyboard.homeViewController) as? HomeViewController
+        view.window?.rootViewController = homeViewController
+        view.window?.makeKeyAndVisible()
     }
     
     

@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		7BE7B1C0ACAEF6F3D63658FF /* Pods_FirebaseAuthie_v1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B680216EAEFCC27C75D3840 /* Pods_FirebaseAuthie_v1.framework */; };
+		B11BABAF25DB35910044015D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11BABAE25DB35910044015D /* Constants.swift */; };
 		B1D9161725D8590C004E5AB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D9161625D8590C004E5AB0 /* AppDelegate.swift */; };
 		B1D9161925D8590C004E5AB0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D9161825D8590C004E5AB0 /* SceneDelegate.swift */; };
 		B1D9161B25D8590C004E5AB0 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D9161A25D8590C004E5AB0 /* StartViewController.swift */; };
@@ -27,6 +28,7 @@
 		5B680216EAEFCC27C75D3840 /* Pods_FirebaseAuthie_v1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirebaseAuthie_v1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6661180623B202E745296B2B /* Pods-FirebaseAuthie-v1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseAuthie-v1.release.xcconfig"; path = "Target Support Files/Pods-FirebaseAuthie-v1/Pods-FirebaseAuthie-v1.release.xcconfig"; sourceTree = "<group>"; };
 		994B40E302D8D765F45F1F7B /* Pods-FirebaseAuthie-v1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseAuthie-v1.debug.xcconfig"; path = "Target Support Files/Pods-FirebaseAuthie-v1/Pods-FirebaseAuthie-v1.debug.xcconfig"; sourceTree = "<group>"; };
+		B11BABAE25DB35910044015D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B1D9161325D8590C004E5AB0 /* FirebaseAuthie-v1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FirebaseAuthie-v1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1D9161625D8590C004E5AB0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B1D9161825D8590C004E5AB0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -70,7 +72,6 @@
 				994B40E302D8D765F45F1F7B /* Pods-FirebaseAuthie-v1.debug.xcconfig */,
 				6661180623B202E745296B2B /* Pods-FirebaseAuthie-v1.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -125,6 +126,7 @@
 				B1D9163725D86073004E5AB0 /* Utilities.swift */,
 				B1D9163C25D86261004E5AB0 /* GradientButtonView.swift */,
 				B1D9164025D86340004E5AB0 /* GradientView.swift */,
+				B11BABAE25DB35910044015D /* Constants.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -249,6 +251,7 @@
 				B1D9163825D86073004E5AB0 /* Utilities.swift in Sources */,
 				B1D9162D25D8592F004E5AB0 /* SignUpViewController.swift in Sources */,
 				B1D9163125D85950004E5AB0 /* SignInViewController.swift in Sources */,
+				B11BABAF25DB35910044015D /* Constants.swift in Sources */,
 				B1D9161925D8590C004E5AB0 /* SceneDelegate.swift in Sources */,
 				B1D9163D25D86261004E5AB0 /* GradientButtonView.swift in Sources */,
 				B1D9163425D85970004E5AB0 /* HomeViewController.swift in Sources */,

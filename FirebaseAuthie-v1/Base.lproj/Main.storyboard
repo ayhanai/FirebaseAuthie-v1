@@ -11,11 +11,14 @@
         <!--Start View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="StartViewController" customModule="FirebaseAuthie_v1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="StartVC" id="BYZ-38-t0r" customClass="StartViewController" customModule="FirebaseAuthie_v1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="GradientView" customModule="FirebaseAuthie_v1" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="islandPalm2" translatesAutoresizingMaskIntoConstraints="NO" id="sHq-Xv-ie0">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="TVB-II-mdh">
                                 <rect key="frame" x="20" y="712" width="374" height="110"/>
                                 <subviews>
@@ -67,9 +70,13 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstAttribute="bottom" secondItem="sHq-Xv-ie0" secondAttribute="bottom" id="5H8-n9-yTg"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="TVB-II-mdh" secondAttribute="bottom" constant="40" id="9eg-NN-5u9"/>
                             <constraint firstItem="TVB-II-mdh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="C0y-xE-Hqr"/>
+                            <constraint firstItem="sHq-Xv-ie0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Zzc-DJ-ovc"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TVB-II-mdh" secondAttribute="trailing" constant="20" id="mxS-gX-m4Q"/>
+                            <constraint firstItem="sHq-Xv-ie0" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="sGz-c3-bPt"/>
+                            <constraint firstItem="sHq-Xv-ie0" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="xtg-l3-UPA"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="firstColor">
@@ -88,7 +95,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="928.98550724637687" y="79.6875"/>
+            <point key="canvasLocation" x="735" y="80"/>
         </scene>
         <!--Sign In View Controller-->
         <scene sceneID="r0D-dc-CDU">
@@ -98,8 +105,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="islandPalm2" translatesAutoresizingMaskIntoConstraints="NO" id="EQA-TN-LrK">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="EuQ-UH-n9p">
-                                <rect key="frame" x="20" y="84" width="374" height="260"/>
+                                <rect key="frame" x="20" y="84" width="374" height="257.5"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IpQ-S7-gYG">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="44"/>
@@ -142,10 +152,10 @@
                                             <action selector="signInTapped:" destination="luJ-z7-iKM" eventType="touchUpInside" id="ZUz-cg-svS"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Emp-lT-I52">
-                                        <rect key="frame" x="0.0" y="234" width="374" height="26"/>
-                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
-                                        <color key="textColor" red="1" green="0.0" blue="0.074743433489999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Emp-lT-I52">
+                                        <rect key="frame" x="0.0" y="234" width="374" height="23.5"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
+                                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -158,8 +168,12 @@
                         <viewLayoutGuide key="safeArea" id="5kh-gN-l4T"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="EQA-TN-LrK" firstAttribute="top" secondItem="gfY-im-dVV" secondAttribute="top" id="7Bx-aM-nGC"/>
+                            <constraint firstAttribute="bottom" secondItem="EQA-TN-LrK" secondAttribute="bottom" id="9Wk-Lg-Tjq"/>
+                            <constraint firstItem="EQA-TN-LrK" firstAttribute="leading" secondItem="5kh-gN-l4T" secondAttribute="leading" id="EV8-Pa-arV"/>
                             <constraint firstItem="EuQ-UH-n9p" firstAttribute="top" secondItem="5kh-gN-l4T" secondAttribute="top" constant="40" id="G5t-gR-sPZ"/>
                             <constraint firstItem="EuQ-UH-n9p" firstAttribute="leading" secondItem="5kh-gN-l4T" secondAttribute="leading" constant="20" id="VjN-Gk-zIk"/>
+                            <constraint firstItem="EQA-TN-LrK" firstAttribute="trailing" secondItem="5kh-gN-l4T" secondAttribute="trailing" id="aCx-hu-Wth"/>
                             <constraint firstItem="5kh-gN-l4T" firstAttribute="trailing" secondItem="EuQ-UH-n9p" secondAttribute="trailing" constant="20" id="mtd-wR-pMc"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
@@ -181,7 +195,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QwT-tI-vZD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1638" y="-226"/>
+            <point key="canvasLocation" x="1637.68115942029" y="-226.33928571428569"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="4gF-xg-TQq">
@@ -191,6 +205,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="islandPalm2" translatesAutoresizingMaskIntoConstraints="NO" id="6fG-j0-Ysq">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="vWa-jS-Y2I">
                                 <rect key="frame" x="20" y="84" width="374" height="380"/>
                                 <subviews>
@@ -245,10 +262,10 @@
                                             <action selector="signUpTapped:" destination="7b6-Jn-o8X" eventType="touchUpInside" id="4rL-g7-25x"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Hz-dX-8NS">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Hz-dX-8NS">
                                         <rect key="frame" x="0.0" y="354" width="374" height="26"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
-                                        <color key="textColor" red="1" green="0.0" blue="0.074743433489999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -263,8 +280,12 @@
                         <viewLayoutGuide key="safeArea" id="NGF-RN-aD2"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstAttribute="bottom" secondItem="6fG-j0-Ysq" secondAttribute="bottom" id="E0z-tT-r3v"/>
+                            <constraint firstItem="6fG-j0-Ysq" firstAttribute="leading" secondItem="NGF-RN-aD2" secondAttribute="leading" id="HhV-jZ-Xet"/>
                             <constraint firstItem="vWa-jS-Y2I" firstAttribute="top" secondItem="NGF-RN-aD2" secondAttribute="top" constant="40" id="bQd-YQ-KnI"/>
+                            <constraint firstItem="6fG-j0-Ysq" firstAttribute="top" secondItem="rcI-y4-Esa" secondAttribute="top" id="eV1-IX-YpK"/>
                             <constraint firstItem="vWa-jS-Y2I" firstAttribute="leading" secondItem="NGF-RN-aD2" secondAttribute="leading" constant="20" id="gxB-Qf-uk3"/>
+                            <constraint firstItem="6fG-j0-Ysq" firstAttribute="trailing" secondItem="NGF-RN-aD2" secondAttribute="trailing" id="h4b-1L-tQP"/>
                             <constraint firstItem="NGF-RN-aD2" firstAttribute="trailing" secondItem="vWa-jS-Y2I" secondAttribute="trailing" constant="20" id="pwM-8x-SUn"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
@@ -288,20 +309,23 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HOF-LA-kV9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1639" y="435"/>
+            <point key="canvasLocation" x="1637.68115942029" y="434.59821428571428"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="dfl-HI-4r7">
             <objects>
-                <viewController id="n4S-Jf-12m" customClass="HomeViewController" customModule="FirebaseAuthie_v1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeVC" id="n4S-Jf-12m" customClass="HomeViewController" customModule="FirebaseAuthie_v1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cEy-g3-EDC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="islandPalm" translatesAutoresizingMaskIntoConstraints="NO" id="dEP-kc-Obs">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Access Granted" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ero-y0-nt5">
                                 <rect key="frame" x="10" y="370" width="394" height="156"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="60"/>
-                                <color key="textColor" red="0.33664929689604989" green="0.77951650908499048" blue="0.14598724473481087" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="1" green="0.76470588240000004" blue="0.56862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -312,12 +336,16 @@
                             <constraint firstItem="ero-y0-nt5" firstAttribute="centerY" secondItem="cEy-g3-EDC" secondAttribute="centerY" id="E0E-do-w5l"/>
                             <constraint firstAttribute="trailing" secondItem="ero-y0-nt5" secondAttribute="trailing" constant="10" id="LKL-52-MOJ"/>
                             <constraint firstItem="ero-y0-nt5" firstAttribute="leading" secondItem="cEy-g3-EDC" secondAttribute="leading" constant="10" id="WxG-w0-9Lh"/>
+                            <constraint firstItem="dEP-kc-Obs" firstAttribute="trailing" secondItem="ZrQ-EU-O9K" secondAttribute="trailing" id="l02-m7-7W5"/>
+                            <constraint firstItem="dEP-kc-Obs" firstAttribute="leading" secondItem="ZrQ-EU-O9K" secondAttribute="leading" id="odf-FF-Xjf"/>
+                            <constraint firstItem="dEP-kc-Obs" firstAttribute="top" secondItem="cEy-g3-EDC" secondAttribute="top" id="vZG-et-239"/>
+                            <constraint firstAttribute="bottom" secondItem="dEP-kc-Obs" secondAttribute="bottom" id="xQV-wc-dc3"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZvL-8f-jby" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2446" y="80"/>
+            <point key="canvasLocation" x="2444.9275362318845" y="79.6875"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Hy2-Iw-Ytq">
@@ -341,26 +369,19 @@
         <designable name="7VV-3K-7e3">
             <size key="intrinsicContentSize" width="76" height="44"/>
         </designable>
-        <designable name="8bC-Xf-vdC">
-            <size key="intrinsicContentSize" width="30" height="34"/>
-        </designable>
         <designable name="EVF-RM-FnA">
             <size key="intrinsicContentSize" width="88" height="44"/>
         </designable>
         <designable name="Haq-73-Xny">
             <size key="intrinsicContentSize" width="76" height="44"/>
         </designable>
-        <designable name="gfY-im-dVV">
-            <size key="intrinsicContentSize" width="30" height="34"/>
-        </designable>
         <designable name="nki-ZB-VHW">
             <size key="intrinsicContentSize" width="88" height="44"/>
         </designable>
-        <designable name="rcI-y4-Esa">
-            <size key="intrinsicContentSize" width="30" height="34"/>
-        </designable>
     </designables>
     <resources>
+        <image name="islandPalm" width="1080" height="1920"/>
+        <image name="islandPalm2" width="1080" height="1920"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
